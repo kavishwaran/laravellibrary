@@ -7,7 +7,7 @@
 
            
     </head>
-    <body style="background-image:  url({{ asset('/images/1.jpg') }});" >
+    <body style="background-image:  url({{ asset('/images/2.jpg') }});" >
         
 
             
@@ -30,7 +30,7 @@
                     @csrf
                     <div class = "form-group" >
                         <div class ="col-sm-12">
-                            <h2 style="text-align: center; background-color:#0a0501; color: #ff7200">Student Registration </h2>
+                            <h2 style="text-align: center; background-color:#1b0f068c; color: #ff7200;  padding: 14px 16px; font-size:26">Student Registration </h2>
                         </div>
 
                     </div>
@@ -41,14 +41,14 @@
                             <p>
                                 <br>
                         <div class="form-group col-md-6">
-                        <label>Student ID</label>
+                        <label style="font-size: 26; font-weight: bold">Student ID</label>
                         <input type="text", name="st_ID" class = "form-control" id="st_ID" placeholder="Student ID">
                         </div>
                             </p>
                             <p>
                                 <br>
                         <div class ="form-group col-md-6">
-                        <label>Student Name</label>   
+                        <label style="font-size: 26; font-weight: bold">Student Name</label>   
                         <input type="text", name="st_name" class = "form-control" id="st_name" placeholder="Student Name">
                         </div>
                             </p>
@@ -56,14 +56,12 @@
                             <p>
                                 <br>
                         <div class="form-group col-md-6">
-                        <label>Student Email</label>   
+                        <label style="font-size: 26; font-weight: bold">Student Email</label>   
                         <input type="text", name="st_email" class = "form-control" id="st_email" placeholder="Student E-mail">
                         </div>
                             </p>
                         <br>
-                        <div class ="form-group" align = "center">
-                        <button class="btn btn-success" style="with:80px">Submit</button>
-                        </div>
+                        <button class="btn btn-success" style="width: 160px; height: 40px;background: #ff7200;  margin-left: 20px; margin-bottom: 10px;font-size: 18px; border-radius: 10px; cursor: pointer;">Submit</button>
                     </div>
                 
             </div>

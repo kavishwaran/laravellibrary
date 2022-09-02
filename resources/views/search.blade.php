@@ -9,22 +9,22 @@
 
     
 </head>
-<body style="background-image:  url({{ asset('/images/1.jpg') }});">
+<body style="background-image:  url({{ asset('/images/2.jpg') }});">
     <div class="container">
-        <h1 style="text-align: center; background-color:#0a0501; color: #ff7200">Search Everything</h1>
+        <h1 style="text-align: center; background-color:#1b0f068c; color: #ff7200;  padding: 14px 16px; font-size:26">Search Everything</h1>
         <div class="row">
             <div class="col-md-6" style="margin-top:40px">
                
                <form action="{{ route('web.search') }}" method="GET">
           
                   <div class="form-group">
-                     <label for="">Enter keyword</label>
+                     <label for="" style ="font-size: 40; font-weight: bold">Enter keyword</label>
                      <input type="text" class="form-control" name="query" placeholder="Search here....." value="{{ request()->input('query') }}">
                      <span class="text-danger">@error('query'){{ $message }} @enderror</span>
                   </div>
-                  <div class="form-group">
-                   <button type="submit" class="btn btn-primary">Search</button>
-                  </div>
+                  
+                   <button type="submit" class="btn btn-primary" style="width: 160px; height: 40px;background: #ff7200;  margin-left: 20px; margin-bottom: 10px;font-size: 18px; border-radius: 10px; cursor: pointer;">Search</button>
+                 
                </form>
                <br>
                <br>
@@ -42,7 +42,7 @@
                              <th>Price</th>
                          </tr>
                      </thead>
-                     <tbody>
+                     <tbody style="font-weight: bold; font-size:26">
                          @if(count($Books) > 0)
                              @foreach($Books as $Book)
                                 <tr>

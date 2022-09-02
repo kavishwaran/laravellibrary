@@ -3,7 +3,7 @@
         <title>Borrow Book</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     </head>
-    <body style="background-image:  url({{ asset('/images/1.jpg') }});">
+    <body style="background-image:  url({{ asset('/images/2.jpg') }});">
         
         <div class = "container">
             <div class = "form-group col-12 p-0">
@@ -19,7 +19,7 @@
                     @csrf
                     <div class = "form-group">
                         <div class ="col-sm-12">
-                            <h2  style="text-align: center; background-color:#0a0501; color: #ff7200;  padding: 14px 16px;">Borrow Book </h2>
+                            <h2  style="text-align: center; background-color:#1b0f068c; color: #ff7200;  padding: 14px 16px; font-size:26">Borrow Book </h2>
                         </div>
                     </div>
                     <hr>
@@ -27,7 +27,7 @@
                         <p>
                             <br>
                         <div class="form-group col-md-6">
-                            <label>Book ID</label>
+                            <label style="font-size: 26; font-weight: bold">Book ID</label>
                             <input type="text", name="book_ID" class = "form-control" id="book_ID" placeholder="Book ID">
                         </div>
                         </p>
@@ -35,7 +35,7 @@
                         <p>
                             <br>
                         <div class ="form-group col-md-6">
-                            <label>Student id</label>   
+                            <label style="font-size: 26; font-weight: bold">Student id</label>   
                             <input type="text", name="stu_id" class = "form-control" id="stu_id" placeholder="Student ID">
                         </div>
                         </p>
@@ -43,7 +43,7 @@
                             <br>
 
                         <div class="form-group col-md-6">
-                            <label>Date</label>   
+                            <label style="font-size: 26; font-weight: bold">Date</label>   
                             <input type="text", name="date" class = "form-control" id="date" placeholder="Date">
                         </div>
                         </p>
@@ -51,9 +51,7 @@
                         <p>
                             <br>
                             <br>
-                        <div class ="form-group col-md-6" align = "center">
-                            <button class="btn btn-success" style="with:80px">Submit</button>
-                            </div>
+                            <button class="btn btn-success" style="width: 160px; height: 40px;background: #ff7200;  margin-left: 20px; margin-bottom: 10px;font-size: 18px; border-radius: 10px; cursor: pointer;">Submit</button>
                         </p>
                         
                     </div>
